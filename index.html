@@ -1,22 +1,64 @@
-<!-- CÓDIGO ACTUALIZADO CON LINKS -->
-<header class="hero">
-    <div class="hero-text">
-        <h1>ZUMBRASIL:</h1>
-        <h2>TU ENERGÍA, TU RITMO</h2>
-        <!-- Link a WhatsApp para la prueba gratis -->
-        <a href="https://wa.me" class="btn-green" target="_blank">¡PRUEBA GRATIS!</a>
-    </div>
-    <div class="hero-image">
-        <!-- Asegúrate de que tu foto se llame así en GitHub -->
-        <img src="zumbrasil-clase.jpg" alt="Instructora Zumbrasil">
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumbrasil - El Ritmo que Electrifica</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root { --green: #39FF14; --pink: #FF00FF; --purple: #8A2BE2; --blue: #00FFFF; }
+        body { background-color: #000; color: white; font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; overflow-x: hidden; }
+        
+        /* DISEÑO HERO */
+        .hero { display: flex; flex-wrap: wrap; padding: 60px 5%; align-items: center; justify-content: center; min-height: 80vh; background: radial-gradient(circle at top right, #1a0033, #000); }
+        .hero-text { flex: 1; min-width: 350px; z-index: 2; }
+        .hero-text h1 { font-size: 3.5rem; color: var(--green); text-shadow: 0 0 20px var(--green); font-style: italic; line-height: 1; margin: 0; }
+        .hero-text h2 { font-size: 2.5rem; text-transform: uppercase; margin: 0 0 30px 0; line-height: 0.9; }
+        
+        .btn-green { background: var(--green); color: #000; padding: 18px 30px; border-radius: 15px; text-decoration: none; font-weight: 900; box-shadow: 0 0 30px var(--green); display: inline-block; margin-right: 15px; }
+        .btn-purple { border: 3px solid var(--purple); color: #fff; padding: 15px 35px; border-radius: 15px; text-decoration: none; font-weight: 900; box-shadow: 0 0 15px var(--purple); display: inline-block; }
 
-<section id="precios" class="pricing">
-    <div class="tarjeta pro">
-        <h3>PLAN MENSUAL</h3>
-        <p style="font-size: 3rem; color: #39FF14;">$45</p>
-        <!-- Link a WhatsApp para comprar -->
-        <a href="https://wa.me" class="btn-green">¡COMPRAR!</a>
-    </div>
-</section>
+        /* TU FOTO NUEVA CON EFECTO NEÓN */
+        .hero-image { flex: 1; min-width: 350px; text-align: center; }
+        .hero-image img { width: 100%; max-width: 600px; border-radius: 30px; border: 3px solid var(--purple); box-shadow: 0 0 40px var(--purple); }
+
+        /* SECCIÓN DE PRECIOS */
+        .pricing { padding: 80px 5%; text-align: center; border-top: 2px solid var(--blue); background: #050505; }
+        .grid-precios { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px; }
+        .tarjeta { background: #111; padding: 45px 30px; border-radius: 25px; border: 2px solid #333; width: 280px; }
+        .tarjeta.pro { border-color: var(--green); box-shadow: 0 0 25px var(--green); transform: scale(1.05); }
+        .monto { font-size: 4rem; color: var(--green); margin: 20px 0; font-weight: 900; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>ZUMBRASIL:</h1>
+            <h2>EL RITMO QUE ELECTRIFICA TU CUERPO</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">Siente la energía de Brasil en cada paso.</p>
+            <a href="#" class="btn-green">¡PRUEBA GRATIS!</a>
+            <a href="#" class="btn-purple">VER HORARIOS</a>
+        </div>
+        <div class="hero-image">
+            <!-- AQUÍ ESTÁ TU NUEVA IMAGEN -->
+            <img src="zumbrasil-clase.jpg" alt="Instructora Zumbrasil">
+        </div>
+    </header>
+
+    <section class="pricing">
+        <h2 style="color: var(--blue); font-size: 3rem; font-style: italic;">TARIFAS ELÉCTRICAS</h2>
+        <div class="grid-precios">
+            <div class="tarjeta">
+                <h3>BÁSICO</h3><div class="monto">$10</div><p>1 Clase suelta</p>
+                <a href="#" class="btn-purple" style="padding: 10px 20px;">ELEGIR</a>
+            </div>
+            <div class="tarjeta pro">
+                <h3>MENSUAL</h3><div class="monto">$45</div><p>Clases ilimitadas</p>
+                <a href="#" class="btn-green" style="padding: 10px 20px;">¡LO QUIERO!</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
